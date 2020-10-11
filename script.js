@@ -26,25 +26,16 @@ function generatePassword() {
   }
   console.log(desiredLength)
 
-  var lowercase = prompt("Do you want lowercase letters included? Press OK to include lowercase letters or enter in 'lowercase', hit cancel to not include lowercase letters.", "lowercase")
-  if (lowercase !== "lowercase" && lowercase !== 'Lowercase') {
-    alert("Invalid selection, please specify if you want lowercase letteres included in your password.")
-    return '';
-  }
+  var lowercase = confirm("Do you want lowercase letters included? Press OK to include lowercase letters or enter in 'lowercase', hit cancel to not include lowercase letters.", "lowercase")
+ 
   console.log(lowercase)
 
-  var uppercase = prompt("Do you want uppercase letters included in your password? Press OK to include upercase letters or enter in 'uppercase', hit cancel to not include upercase letters.", "upercase")
-  if (uppercase !== "upercase" && uppercase !== 'Upercase') {
-    alert("Invalid selection, please specify if you want upercase letteres included in your password.")
-    return '';
-  }
+  var uppercase = confirm("Do you want uppercase letters included in your password? Press OK to include upercase letters or enter in 'uppercase', hit cancel to not include upercase letters.", "upercase")
+ 
   console.log(uppercase)
 
-  var numbers = prompt("Would you like numbers included in your password? Click OK for yes or type in 'numbers', hit cancel to not have upercase included.", "numbers")
-  if (numbers !== 'numbers' && numbers !== 'Numbers') {
-    alert("Invalid selection, please specify if you want numbers included in your password.")
-    return '';
-  }
+  var numbers = confirm("Would you like numbers included in your password? Click OK for yes or type in 'numbers', hit cancel to not have upercase included.", "numbers")
+ 
   console.log(numbers)
   var allLowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
   var allUpercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]

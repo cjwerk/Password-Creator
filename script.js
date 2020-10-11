@@ -26,15 +26,15 @@ function generatePassword() {
   }
   console.log(desiredLength)
 
-  var lowercase = confirm("Do you want lowercase letters included? Press OK to include lowercase letters or enter in 'lowercase', hit cancel to not include lowercase letters.", "lowercase")
+  var lowercase = confirm("Do you want lowercase letters included? Press OK to include lowercase letters, hit cancel to not include lowercase letters.", "lowercase")
  
   console.log(lowercase)
 
-  var uppercase = confirm("Do you want uppercase letters included in your password? Press OK to include upercase letters or enter in 'uppercase', hit cancel to not include upercase letters.", "upercase")
+  var uppercase = confirm("Do you want uppercase letters included in your password? Press OK to include upercase letters, hit cancel to not include upercase letters.", "upercase")
  
   console.log(uppercase)
 
-  var numbers = confirm("Would you like numbers included in your password? Click OK for yes or type in 'numbers', hit cancel to not have upercase included.", "numbers")
+  var numbers = confirm("Would you like numbers included in your password? Click OK for yes, hit cancel to not have upercase included.", "numbers")
  
   console.log(numbers)
   var allLowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
